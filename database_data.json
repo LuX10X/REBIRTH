@@ -1,0 +1,101 @@
+{
+  "AMS01-00010": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 10,
+    "title": "Part 10",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00011": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 11,
+    "title": "Part 11",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00009": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 9,
+    "title": "Part 9",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00007": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 7,
+    "title": "Part 7",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00006": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 6,
+    "title": "Part 6",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00005": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 5,
+    "title": "Part 5",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00008": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 8,
+    "title": "Part 8",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00004": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 4,
+    "title": "Part 4",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00001": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 1,
+    "title": "Part 1",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00003": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 3,
+    "title": "Part 3",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  },
+  "AMS01-00002": {
+    "name": "AMS",
+    "vol": "VOL 1",
+    "number": 2,
+    "title": "Part 2",
+    "date": "1999-01-01",
+    "writer": "A",
+    "penciler": "B"
+  }
+}
