@@ -76,6 +76,8 @@ async function dataDBWiki(databaseId, filename) {
     }
 }
 
+
+
 async function main() {
     // await createIdUrlMapFile(notion);
     // const idUrlMap = JSON.parse(fs.readFileSync('id_url_map.json', 'utf8'));

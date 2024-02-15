@@ -3,7 +3,7 @@
     "object": "page",
     "id": "63c2d3dc-f3ec-4d31-b283-479b11697ee4",
     "created_time": "2024-02-12T15:26:00.000Z",
-    "last_edited_time": "2024-02-12T22:53:00.000Z",
+    "last_edited_time": "2024-02-15T19:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -66,6 +66,15 @@
           }
         ]
       },
+      "Score": {
+        "id": "ROvP",
+        "type": "select",
+        "select": {
+          "id": "s_DI",
+          "name": "☆",
+          "color": "blue"
+        }
+      },
       "Number": {
         "id": "%5B%40HJ",
         "type": "number",
@@ -102,7 +111,7 @@
     "object": "page",
     "id": "36134796-c2ed-4e80-94a9-d0755fcfdd4c",
     "created_time": "2024-02-11T00:19:00.000Z",
-    "last_edited_time": "2024-02-12T14:33:00.000Z",
+    "last_edited_time": "2024-02-15T19:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -165,6 +174,15 @@
           }
         ]
       },
+      "Score": {
+        "id": "ROvP",
+        "type": "select",
+        "select": {
+          "id": "hQE<",
+          "name": "☆☆",
+          "color": "yellow"
+        }
+      },
       "Number": {
         "id": "%5B%40HJ",
         "type": "number",
@@ -201,7 +219,7 @@
     "object": "page",
     "id": "48a1e9ff-a5f2-43f3-9eae-5583f81c9336",
     "created_time": "2024-02-10T23:29:00.000Z",
-    "last_edited_time": "2024-02-13T01:04:00.000Z",
+    "last_edited_time": "2024-02-15T19:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -264,6 +282,15 @@
           }
         ]
       },
+      "Score": {
+        "id": "ROvP",
+        "type": "select",
+        "select": {
+          "id": "_@FI",
+          "name": "☆☆☆☆☆",
+          "color": "yellow"
+        }
+      },
       "Number": {
         "id": "%5B%40HJ",
         "type": "number",
@@ -300,7 +327,7 @@
     "object": "page",
     "id": "727aac43-648e-4da3-bfda-2a896d5a525d",
     "created_time": "2024-02-10T23:29:00.000Z",
-    "last_edited_time": "2024-02-12T14:33:00.000Z",
+    "last_edited_time": "2024-02-15T19:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -363,6 +390,15 @@
           }
         ]
       },
+      "Score": {
+        "id": "ROvP",
+        "type": "select",
+        "select": {
+          "id": "jHks",
+          "name": "☆☆☆",
+          "color": "green"
+        }
+      },
       "Number": {
         "id": "%5B%40HJ",
         "type": "number",
@@ -399,7 +435,7 @@
     "object": "page",
     "id": "8c60eb16-1c30-4ac4-b7b5-f197d51d14ea",
     "created_time": "2024-02-10T23:29:00.000Z",
-    "last_edited_time": "2024-02-12T22:56:00.000Z",
+    "last_edited_time": "2024-02-15T19:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -461,6 +497,15 @@
             "href": null
           }
         ]
+      },
+      "Score": {
+        "id": "ROvP",
+        "type": "select",
+        "select": {
+          "id": "@sk?",
+          "name": "☆☆☆☆",
+          "color": "red"
+        }
       },
       "Number": {
         "id": "%5B%40HJ",
