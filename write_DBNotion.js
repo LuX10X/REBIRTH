@@ -13,7 +13,7 @@ async function addDataToDBLocal() {
     const date = "1999-01-01";
     const writer = "A";
     const penciler = "B";
-    const id = "AMS01-00010"
+    const id = "AMS01-00010";
 
     try {
         const newPage = await notion.pages.create({

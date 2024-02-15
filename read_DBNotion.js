@@ -61,10 +61,30 @@ async function getDataForPage(idUrlMap, notionClient) {
     await createDBLocal(childDatabaseId, notionClient);
 }
 
+async function dataDBWiki(databaseId, filename) {
+    try {
+        const response = await notion.databases.query({
+            database_id: databaseId,
+        });
+
+        const data = JSON.stringify(response.results, null, 2);
+        fs.writeFileSync(filename, data);
+
+        console.log('Data has been successfully written to', filename);
+    } catch (error) {
+        console.error('Error:', error.body);
+    }
+}
+
 async function main() {
-    await createIdUrlMapFile(notion);
-    const idUrlMap = JSON.parse(fs.readFileSync('id_url_map.json', 'utf8'));
-    await getDataForPage(idUrlMap, notion);
+    // await createIdUrlMapFile(notion);
+    // const idUrlMap = JSON.parse(fs.readFileSync('id_url_map.json', 'utf8'));
+    // await getDataForPage(idUrlMap, notion);
+
+    const databaseId = '994834b0b3f54c7790f50d544c95e9e2';
+    const filename = 'dataDBWiki.json';
+
+    await dataDBWiki(databaseId, filename);
 }
 
 main();
