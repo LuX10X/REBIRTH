@@ -5,7 +5,7 @@ const notion = new Client({
 });
 
 async function updateDataToDBLocal() {
-    const pageId = '6b1ea05f-d834-4db7-8d48-cd02c4f97ea5';  
+    const pageId = '64a14e36-9403-40b6-915d-88576ee88528';  
     const name = "AMS";
     const vol = "VOL 1";
     const number = 19;
@@ -30,7 +30,7 @@ async function updateDataToDBLocal() {
             },
         });
 
-        console.log("Datos actulizados en la base de datos 'Other Day':",newData);
+        console.log("Datos actulizados en la base de datos local:",newData);
     } catch (error) {
         console.error("Error al actualizar datos en la base de datos.", error);
     }

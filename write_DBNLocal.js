@@ -30,7 +30,7 @@ async function addDataToDBLocal() {
             },
         });
 
-        console.log("Nueva página creada en la base de datos 'Other Day':", newPage);
+        console.log("Nueva página creada en la base de datos local:", newPage);
     } catch (error) {
         console.error("Error al agregar datos a la base de datos:", error);
     }

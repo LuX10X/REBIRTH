@@ -1,0 +1,35 @@
+[
+  {
+    "id": "64a14e36-9403-40b6-915d-88576ee88528",
+    "Penciler": "B",
+    "ID": "AMS01-00001",
+    "Date": "1999-01-01",
+    "Vol": "VOL 1",
+    "Number": 1,
+    "Writer": "A",
+    "Title": "Part 1",
+    "Name": "AMS"
+  },
+  {
+    "id": "701a7beb-886a-480d-ac16-733ce123f317",
+    "Penciler": "B",
+    "ID": "AMS01-00003",
+    "Date": "1999-01-01",
+    "Vol": "VOL 1",
+    "Number": 3,
+    "Writer": "A",
+    "Title": "Part 3",
+    "Name": "AMS"
+  },
+  {
+    "id": "a3e04569-9ec1-4c52-b744-52001a190cb5",
+    "Penciler": "B",
+    "ID": "AMS01-00002",
+    "Date": "1999-01-01",
+    "Vol": "VOL 1",
+    "Number": 2,
+    "Writer": "A",
+    "Title": "Part 2",
+    "Name": "AMS"
+  }
+]
