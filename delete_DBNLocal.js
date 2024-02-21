@@ -7,7 +7,7 @@ const notion = new Client({
 
 async function getDataById(id) {
     try {
-        const data = await fs.readFile("itemsDBWiki.json", "utf-8");
+        const data = await fs.readFile("itemsDBLocal.json", "utf-8");
         const items = JSON.parse(data);
         const item = items.find(item => item.ID === id);
         if (item) {
@@ -22,14 +22,8 @@ async function getDataById(id) {
     }
 }
 
-async function updateDataToDBWiki() {
-    const idToFind = "P003-0002";//DATO DE ENTRADA
-
-    const name = "X-Men2";
-    const number = 1;
-    const title = "Part 2";
-    const score = "☆☆";
-    //const id = "P003-0002";
+async function deleteDataToDBLocal() {
+    const idToFind = "AMS01-00003";//DATO DE ENTRADA
     
     try {
         const item = await getDataById(idToFind);
@@ -39,25 +33,19 @@ async function updateDataToDBWiki() {
         }
 
         const pageId = item
-        const newData = await notion.pages.update({
+        const deleteData = await notion.pages.update({
             page_id: pageId,
-            properties: {
-                "Name": { title: [{ text: { content: name } }] },
-                "Number": { number: number },
-                "Title": { rich_text: [{ text: { content: title } }] },
-                "Score": { select: { name: score,}},
-                //"ID": { rich_text: [{ text: { content: id } }] }
-            },
+            archived: true,
         });
 
-        console.log("Datos actulizados en la base de datos wiki:",newData);
+        console.log("Datos eliminados de la base de datos local:",deleteData);
     } catch (error) {
-        console.error("Error al actualizar datos en la base de datos.", error);
+        console.error("Error al eliminar datos en la base de datos.", error);
     }
 }
 
 async function main() {
-    await updateDataToDBWiki();
+    await deleteDataToDBLocal();
 }
 
 main();

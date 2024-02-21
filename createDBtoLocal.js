@@ -5,17 +5,17 @@ const notion = new Client({
     auth: "secret_EoxNTywQpCYhhUS80hURa31q4JNRfQvNWYYw0oPVxLX",
 });
 
-async function readDataDBWiki() {
-    const databaseId = "994834b0b3f54c7790f50d544c95e9e2";//ID DE LA DB WIKI
+async function readDataDBLocal() {
+    const databaseId = "ccf12b1f5b8443939d2c85ae058ea164";//ID DE LA DB LOCAL
 
     try {
         const readPage = await notion.databases.query({
             database_id: databaseId,
         });
         
-        fs.writeFileSync('dataDBWiki.json', JSON.stringify(readPage, null, 2));
+        fs.writeFileSync('dataDBLocal.json', JSON.stringify(readPage, null, 2));
 
-        console.log("Datos de la base de datos wiki:", readPage)
+        console.log("Datos de la base de datos local:", readPage)
     } catch (error) {
         console.error("Error al mostrar los datos de la base de datos:", error);
     }
@@ -23,7 +23,7 @@ async function readDataDBWiki() {
 
 async function readDataFromFile() {
     try {
-        const rawData = fs.readFileSync('dataDBWiki.json');
+        const rawData = fs.readFileSync('dataDBLocal.json');
         const data = JSON.parse(rawData);
 
         const objectsList = [];
@@ -41,6 +41,8 @@ async function readDataFromFile() {
                     objectData[propertyKey] = property[property.type][0].text.content;
                 } else if (property.type === 'number') {
                     objectData[propertyKey] = property.number;
+                } else if (property.type === 'date') {
+                    objectData[propertyKey] = property.date.start;
                 } else if (property.type === 'select') {
                     objectData[propertyKey] = property.select.name;
                 }
@@ -51,7 +53,7 @@ async function readDataFromFile() {
 
         console.log("Datos leídos del archivo:", objectsList);
 
-        fs.writeFileSync('itemsDBWiki.json', JSON.stringify(objectsList, null, 2));
+        fs.writeFileSync('itemsDBLocal.json', JSON.stringify(objectsList, null, 2));
 
         return objectsList;
     } catch (error) {
@@ -62,7 +64,7 @@ async function readDataFromFile() {
 
 async function main() {
     try{
-        await readDataDBWiki();
+        await readDataDBLocal();
         await readDataFromFile();
     } catch (error) {
         console.error("Error en la ejecución principal:", error);
