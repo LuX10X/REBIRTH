@@ -1,0 +1,119 @@
+{
+  "object": "database",
+  "id": "ccf12b1f-5b84-4393-9d2c-85ae058ea164",
+  "cover": null,
+  "icon": null,
+  "created_time": "2024-02-11T00:33:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+  },
+  "last_edited_time": "2024-02-13T16:44:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Other Day",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Other Day",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "Penciler": {
+      "id": "GyIa",
+      "name": "Penciler",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "ID": {
+      "id": "PSgY",
+      "name": "ID",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Date": {
+      "id": "UB%7CJ",
+      "name": "Date",
+      "type": "date",
+      "date": {}
+    },
+    "Vol": {
+      "id": "eUXn",
+      "name": "Vol",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "fRKK",
+            "name": "VOL 1",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "2a81416f-5050-4ba2-8e0c-2126b2d65f7a",
+            "name": "VOL 2",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "348c076c-6b28-4307-a404-7905a068c8df",
+            "name": "VOL 3",
+            "color": "brown",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Number": {
+      "id": "edgu",
+      "name": "Number",
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "Writer": {
+      "id": "f%3B~S",
+      "name": "Writer",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Title": {
+      "id": "wkWY",
+      "name": "Title",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "page_id",
+    "page_id": "48a1e9ff-a5f2-43f3-9eae-5583f81c9336"
+  },
+  "url": "https://www.notion.so/ccf12b1f5b8443939d2c85ae058ea164",
+  "public_url": null,
+  "archived": false,
+  "request_id": "3a893f2f-f3aa-4516-9781-4fed2479cb1f"
+}
+

@@ -9,11 +9,11 @@ async function readDataDBLocal() {
     const databaseId = "ccf12b1f5b8443939d2c85ae058ea164";//ID DE LA DB LOCAL
 
     try {
-        const readPage = await notion.databases.query({
+        const readPage = await notion.databases.retrieve({
             database_id: databaseId,
         });
         
-        fs.writeFileSync('dataDBLocal.json', JSON.stringify(readPage, null, 2));
+        fs.writeFileSync('infoDBLocal.json', JSON.stringify(readPage, null, 2));
 
         console.log("Datos de la base de datos local:", readPage)
     } catch (error) {
@@ -21,51 +21,70 @@ async function readDataDBLocal() {
     }
 }
 
-async function readDataFromFile() {
+async function createNotionDatabase() {
     try {
-        const rawData = fs.readFileSync('dataDBLocal.json');
-        const data = JSON.parse(rawData);
-
-        const objectsList = [];
-
-        data.results.forEach(page => {
-            const objectData = {};
-
-            objectData.id = page.id;
-
-            const properties = page.properties;
-
-            Object.keys(properties).forEach(propertyKey => {
-                const property = properties[propertyKey];
-                if (property.type === 'title' || property.type === 'rich_text') {
-                    objectData[propertyKey] = property[property.type][0].text.content;
-                } else if (property.type === 'number') {
-                    objectData[propertyKey] = property.number;
-                } else if (property.type === 'date') {
-                    objectData[propertyKey] = property.date.start;
-                } else if (property.type === 'select') {
-                    objectData[propertyKey] = property.select.name;
-                }
-            });
-
-            objectsList.push(objectData);
-        });
-
-        console.log("Datos leídos del archivo:", objectsList);
-
-        fs.writeFileSync('itemsDBLocal.json', JSON.stringify(objectsList, null, 2));
-
-        return objectsList;
+      const response = await notion.databases.create({
+        parent: {
+          type: "page_id",
+          page_id: "8c60eb161c304ac4b7b5f197d51d14ea",
+        },
+        icon: {
+          type: "emoji",
+          emoji: "4️⃣",
+        },
+        cover: {
+          type: "external",
+          external: {
+            url: "https://www.akiracomics.com/imagenes/poridentidad?identidad=ab835df9-78cf-4b00-88d8-2eb7a8bdf297&ancho=850&alto=",
+          },
+        },
+        title: [
+          {
+            type: "text",
+            text: {
+              content: "Future Fundation",
+              link: null,
+            },
+          },
+        ],
+        properties: {
+          "Name": {
+            "title": {}
+          },
+          "Vol": {
+            "select": {}
+          },
+          "Number": {
+            "number": {}
+          },
+          "Title": {
+            "rich_text": {}
+          },
+          "Date": {
+            "date": {}
+          },
+          "Writer": {
+            "rich_text": {}
+          },
+          "Penciler": {
+            "rich_text": {}
+          },
+          "ID": {
+            "rich_text": {}
+          }
+        }
+      });
+  
+      console.log('Base de datos creada:', response);
     } catch (error) {
-        console.error("Error al leer el archivo:", error);
-        return null;
+      console.error('Error al crear la base de datos:', error);
     }
-}
+  }
 
 async function main() {
     try{
-        await readDataDBLocal();
-        await readDataFromFile();
+        //await readDataDBLocal();
+        await createNotionDatabase();
     } catch (error) {
         console.error("Error en la ejecución principal:", error);
     }
