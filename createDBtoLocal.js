@@ -1,5 +1,6 @@
 const { Client } = require("@notionhq/client");
 const fs = require('fs');
+const { type } = require("os");
 
 const notion = new Client({
     auth: "secret_EoxNTywQpCYhhUS80hURa31q4JNRfQvNWYYw0oPVxLX",
@@ -43,33 +44,49 @@ async function createNotionDatabase() {
             type: "text",
             text: {
               content: "Future Fundation",
-              link: null,
             },
           },
         ],
+        description: [
+          {
+            type: "text",
+            text: {
+              content: "Tabla",
+            },
+          },
+        ],
+        is_inline: true,
         properties: {
           "Name": {
+            "type": "title",
             "title": {}
           },
           "Vol": {
+            "type": "select",
             "select": {}
           },
           "Number": {
+            "type": "number",
             "number": {}
           },
           "Title": {
+            "type": "rich_text",
             "rich_text": {}
           },
           "Date": {
+            "type": "date",
             "date": {}
           },
           "Writer": {
+            "type": "rich_text",
             "rich_text": {}
           },
           "Penciler": {
+            "type": "rich_text",
             "rich_text": {}
           },
           "ID": {
+            "type": "rich_text",
             "rich_text": {}
           }
         }
