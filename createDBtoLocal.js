@@ -91,12 +91,12 @@ async function createNotionDatabase() {
           }
         }
       });
-  
+
       console.log('Base de datos creada:', response);
     } catch (error) {
       console.error('Error al crear la base de datos:', error);
     }
-  }
+}
 
 async function main() {
     try{

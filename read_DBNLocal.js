@@ -6,7 +6,7 @@ const notion = new Client({
 });
 
 async function readDataDBLocal() {
-    const databaseId = "ccf12b1f5b8443939d2c85ae058ea164";//ID DE LA DB LOCAL
+    const databaseId = "990fd4f025104cc3a4e8adf4ba1e6494";//ID DE LA DB LOCAL
 
     try {
         const readPage = await notion.databases.query({
@@ -34,7 +34,7 @@ async function readDataFromFile() {
             objectData.id = page.id;
 
             const properties = page.properties;
-
+            //ojo con esto, key:value, revisar api notion
             Object.keys(properties).forEach(propertyKey => {
                 const property = properties[propertyKey];
                 if (property.type === 'title' || property.type === 'rich_text') {
