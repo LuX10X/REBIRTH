@@ -49,18 +49,6 @@ async function createNotionDatabase() {
 
         console.log('Base de datos creada con la propiedad "Name":', response);
 
-        // Guardar las propiedades restantes en un archivo JSON
-        const propertiesToCreate = {
-            "Vol": { "type": "select", "select": {} },
-            "Number": { "type": "number", "number": {} },
-            "Title": { "type": "rich_text", "rich_text": {} },
-            "Date": { "type": "date", "date": {} },
-            "Writer": { "type": "rich_text", "rich_text": {} },
-            "Penciler": { "type": "rich_text", "rich_text": {} },
-            "ID": { "type": "rich_text", "rich_text": {} }
-        };
-        fs.writeFileSync('propertiesToCreate.json', JSON.stringify(propertiesToCreate, null, 2));
-
         return response.id;
     } catch (error) {
         console.error('Error al crear la base de datos:', error);
@@ -72,17 +60,19 @@ async function addPropertiesFromJson(databaseId) {
         const propertiesJson = fs.readFileSync('propertiesToCreate.json', 'utf-8');
         const propertiesToAdd = JSON.parse(propertiesJson);
 
-        const propertyKeys = Object.keys(propertiesToAdd);
+        // Orden deseado de las propiedades
+        const desiredOrder = ["Vol", "Number", "Title", "Date", "Writer", "Penciler", "ID"];
 
-        for (const key of propertyKeys) {
-            const property = propertiesToAdd[key];
+        // Agregar cada propiedad en el orden deseado
+        for (const propertyName of desiredOrder) {
+            const property = propertiesToAdd[propertyName];
             const response = await notion.databases.update({
                 database_id: databaseId,
                 properties: {
-                    [key]: property
+                    [propertyName]: property
                 }
             });
-            console.log(`Propiedad "${key}" agregada a la base de datos.`, response);
+            console.log(`Propiedad "${propertyName}" agregada a la base de datos.`, response);
         }
 
     } catch (error) {
