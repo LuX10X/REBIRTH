@@ -57,35 +57,35 @@ async function createNotionDatabase() {
         ],
         is_inline: true,
         properties: {
-          "Name": {
+          "1 Name": {
             "type": "title",
             "title": {}
           },
-          "Vol": {
+          "2 Vol": {
             "type": "select",
             "select": {}
           },
-          "Number": {
+          "3 Number": {
             "type": "number",
             "number": {}
           },
-          "Title": {
+          "4 Title": {
             "type": "rich_text",
             "rich_text": {}
           },
-          "Date": {
+          "5 Date": {
             "type": "date",
             "date": {}
           },
-          "Writer": {
+          "6 Writer": {
             "type": "rich_text",
             "rich_text": {}
           },
-          "Penciler": {
+          "7 Penciler": {
             "type": "rich_text",
             "rich_text": {}
           },
-          "ID": {
+          "8 ID": {
             "type": "rich_text",
             "rich_text": {}
           }
