@@ -1,0 +1,499 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "64a14e36-9403-40b6-915d-88576ee88528",
+      "created_time": "2024-02-11T00:33:00.000Z",
+      "last_edited_time": "2024-02-20T19:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7d918138-22fb-41c2-9356-682f3eec2f9c"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "ccf12b1f-5b84-4393-9d2c-85ae058ea164"
+      },
+      "archived": false,
+      "properties": {
+        "Penciler": {
+          "id": "GyIa",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "B",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "B",
+              "href": null
+            }
+          ]
+        },
+        "ID": {
+          "id": "PSgY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS01-00001",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS01-00001",
+              "href": null
+            }
+          ]
+        },
+        "Date": {
+          "id": "UB%7CJ",
+          "type": "date",
+          "date": {
+            "start": "1999-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Vol": {
+          "id": "eUXn",
+          "type": "select",
+          "select": {
+            "id": "fRKK",
+            "name": "VOL 1",
+            "color": "default"
+          }
+        },
+        "Number": {
+          "id": "edgu",
+          "type": "number",
+          "number": 1
+        },
+        "Writer": {
+          "id": "f%3B~S",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "A",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "A",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "wkWY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Part 2",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Part 2",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/AMS-64a14e36940340b6915d88576ee88528",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "701a7beb-886a-480d-ac16-733ce123f317",
+      "created_time": "2024-02-11T00:33:00.000Z",
+      "last_edited_time": "2024-02-21T13:10:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "7d918138-22fb-41c2-9356-682f3eec2f9c"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "ccf12b1f-5b84-4393-9d2c-85ae058ea164"
+      },
+      "archived": false,
+      "properties": {
+        "Penciler": {
+          "id": "GyIa",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "B",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "B",
+              "href": null
+            }
+          ]
+        },
+        "ID": {
+          "id": "PSgY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS01-00003",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS01-00003",
+              "href": null
+            }
+          ]
+        },
+        "Date": {
+          "id": "UB%7CJ",
+          "type": "date",
+          "date": {
+            "start": "1999-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Vol": {
+          "id": "eUXn",
+          "type": "select",
+          "select": {
+            "id": "fRKK",
+            "name": "VOL 1",
+            "color": "default"
+          }
+        },
+        "Number": {
+          "id": "edgu",
+          "type": "number",
+          "number": 3
+        },
+        "Writer": {
+          "id": "f%3B~S",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "A",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "A",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "wkWY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Part 3",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Part 3",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/AMS-701a7beb886a480dac16733ce123f317",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "a3e04569-9ec1-4c52-b744-52001a190cb5",
+      "created_time": "2024-02-11T00:33:00.000Z",
+      "last_edited_time": "2024-02-13T01:49:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "ccf12b1f-5b84-4393-9d2c-85ae058ea164"
+      },
+      "archived": false,
+      "properties": {
+        "Penciler": {
+          "id": "GyIa",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "B",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "B",
+              "href": null
+            }
+          ]
+        },
+        "ID": {
+          "id": "PSgY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS01-00002",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS01-00002",
+              "href": null
+            }
+          ]
+        },
+        "Date": {
+          "id": "UB%7CJ",
+          "type": "date",
+          "date": {
+            "start": "1999-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Vol": {
+          "id": "eUXn",
+          "type": "select",
+          "select": {
+            "id": "fRKK",
+            "name": "VOL 1",
+            "color": "default"
+          }
+        },
+        "Number": {
+          "id": "edgu",
+          "type": "number",
+          "number": 2
+        },
+        "Writer": {
+          "id": "f%3B~S",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "A",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "A",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "wkWY",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Part 2",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Part 2",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AMS",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AMS",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/AMS-a3e045699ec14c52b74452001a190cb5",
+      "public_url": null
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {},
+  "request_id": "829428b4-8b6a-414e-9545-46904f764ea1"
+}
