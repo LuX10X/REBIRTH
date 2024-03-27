@@ -22,6 +22,11 @@
       },
       "archived": false,
       "properties": {
+        "Order": {
+          "id": "%3DpFY",
+          "type": "number",
+          "number": null
+        },
         "Penciler": {
           "id": "GyIa",
           "type": "rich_text",
@@ -185,6 +190,11 @@
       },
       "archived": false,
       "properties": {
+        "Order": {
+          "id": "%3DpFY",
+          "type": "number",
+          "number": null
+        },
         "Penciler": {
           "id": "GyIa",
           "type": "rich_text",
@@ -348,6 +358,11 @@
       },
       "archived": false,
       "properties": {
+        "Order": {
+          "id": "%3DpFY",
+          "type": "number",
+          "number": null
+        },
         "Penciler": {
           "id": "GyIa",
           "type": "rich_text",
@@ -495,5 +510,5 @@
   "has_more": false,
   "type": "page_or_database",
   "page_or_database": {},
-  "request_id": "829428b4-8b6a-414e-9545-46904f764ea1"
+  "request_id": "c7f4c776-bb03-4a1a-9b04-a3f192f6481f"
 }

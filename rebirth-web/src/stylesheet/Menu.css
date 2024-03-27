@@ -1,0 +1,34 @@
+/* Menu.css */
+.menu-container {
+    background-color: black;
+    display: flex;
+    align-items: stretch; /* Asegura que los botones se expandan verticalmente para ocupar todo el alto */
+    padding: 2px; /* Ajusta el espacio interior del contenedor */
+}
+
+.menu-button {
+    padding: 15px; /* Ajusta el espacio interior de los botones */
+    background-color: #333; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    border: none; /* Elimina los bordes de los botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+}
+
+.menu-button:not(:last-child) {
+    margin-right: 2px; /* Añade un espacio entre los botones */
+}
+
+.menu-button:hover {
+    background-color: #1d1d1d; /* Color de fondo de los botones al pasar el ratón */
+}
+
+.menu-button:first-child {
+    border-top-left-radius: 15px; /* Ajusta la esquina superior izquierda del primer botón */
+    border-bottom-left-radius: 15px; /* Ajusta la esquina inferior izquierda del primer botón */
+}
+
+.menu-button:last-child {
+    border-top-right-radius: 15px; /* Ajusta la esquina superior derecha del último botón */
+    border-bottom-right-radius: 15px; /* Ajusta la esquina inferior derecha del último botón */
+}

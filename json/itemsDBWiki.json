@@ -5,6 +5,7 @@
     "ID": "P002-0001",
     "Score": "☆☆☆☆",
     "Number": 1,
+    "Order": null,
     "Name": "Fantastic Four"
   },
   {
@@ -13,6 +14,7 @@
     "ID": "P001-0001",
     "Score": "☆☆☆☆☆",
     "Number": 1,
+    "Order": null,
     "Name": "Spiderman"
   },
   {
@@ -21,6 +23,7 @@
     "ID": "P003-0001",
     "Score": "☆☆☆",
     "Number": 1,
+    "Order": null,
     "Name": "X-Men"
   }
 ]

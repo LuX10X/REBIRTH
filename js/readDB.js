@@ -38,6 +38,9 @@ async function readData(databaseId, outputFile) {
                     case 'select':
                         objectData[propertyKey] = property.select.name;
                         break;
+                    case 'multi_select':
+                        objectData[propertyKey] = property.multi_select.name;
+                        break;
                     default:
                         break;
                 }
