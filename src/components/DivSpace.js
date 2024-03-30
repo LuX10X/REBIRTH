@@ -8,11 +8,9 @@ import '../stylesheet/DivSpace.css'; // Importa los estilos CSS
 const DivSpace = ({ activeForm }) => {
     return (
         <div className="div-space">
-            <div className="left">
                 {activeForm === 'write' && <WriteForm />}
                 {activeForm === 'update' && <UpdateForm />}
                 {activeForm === 'read' && <ReadForm />}
-            </div>
         </div>
     );
 }

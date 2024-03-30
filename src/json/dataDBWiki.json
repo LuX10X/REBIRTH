@@ -123,7 +123,7 @@
       "object": "page",
       "id": "48a1e9ff-a5f2-43f3-9eae-5583f81c9336",
       "created_time": "2024-02-10T23:29:00.000Z",
-      "last_edited_time": "2024-02-28T12:57:00.000Z",
+      "last_edited_time": "2024-03-30T22:50:00.000Z",
       "created_by": {
         "object": "user",
         "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -198,7 +198,13 @@
         "Label": {
           "id": "ZK%5CM",
           "type": "multi_select",
-          "multi_select": []
+          "multi_select": [
+            {
+              "id": "74af0f6b-ca13-4861-a5c5-a2d29c29837b",
+              "name": "rojo",
+              "color": "orange"
+            }
+          ]
         },
         "Number": {
           "id": "%5B%40HJ",
@@ -360,5 +366,5 @@
   "has_more": false,
   "type": "page_or_database",
   "page_or_database": {},
-  "request_id": "5c64669b-5723-4f30-9409-005b72ab34de"
+  "request_id": "091854d6-e9c5-4024-881d-a9a9c90cd1dd"
 }

@@ -5,14 +5,18 @@ const notion = new Client({
 });
 
 async function addDataToDBWiki() {
-    const databaseId = "994834b0b3f54c7790f50d544c95e9e2";//ID DE LA DB WIKI
+    const databaseId = "994834b0b3f54c7790f50d544c95e9e2";//ID DE LA DB WIKI NO CAMBIAR
     const name = "X-Men";
     const number = 2;
     const title = "Second Genesis";
     const score = "☆";
     const id = "P003-0002";
+    const labels = ["Spiderman","Avengers"];
+    const order = 1;
 
     try {
+        const labelOptions = labels.map(label => ({ name: label })); // Crear objetos de opciones de etiqueta
+
         const newPage = await notion.pages.create({
             parent: { database_id: databaseId },
             properties: {
@@ -20,7 +24,9 @@ async function addDataToDBWiki() {
                 "Number": { number: number },
                 "Title": { rich_text: [{ text: { content: title } }] },
                 "Score": { select: { name: score,}},
-                "ID": { rich_text: [{ text: { content: id } }] }
+                "ID": { rich_text: [{ text: { content: id } }] },
+                "Label": { multi_select: labelOptions},
+                "Order": { number: order }
             },
         });
 

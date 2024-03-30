@@ -2,7 +2,7 @@
 .header {
     position: relative;
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    height: 200px; /* Establece la altura deseada para el contenedor */
+    height: 180px; /* Establece la altura deseada para el contenedor */
     overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del contenedor */
     display: flex; /* Utiliza flexbox para centrar verticalmente la imagen */
     justify-content: center; /* Centra horizontalmente la imagen */
@@ -12,7 +12,7 @@
 
 /* Header.css */
 .header-image {
-    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+    width: 70%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
     height: auto; /* Permite que la altura de la imagen se ajuste automáticamente según el ancho */
     position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
     z-index: 1; /* Coloca la imagen detrás de cualquier otro contenido dentro del contenedor */
@@ -21,5 +21,5 @@
 }
 
 .header:hover .header-image {
-    transform: scale(0.5); 
+    transform: scale(0.45); 
 }

@@ -1,18 +1,7 @@
 /* DivSpace.css */
 .div-space {
-    height: calc(50vh - 20px); /* La mitad de la altura de la pantalla, menos el margen superior */
-    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido excede la altura */
-    border: 1px solid #ccc;
-}
-
-.div-space .left {
-    width: 50%; /* La mitad del ancho de la pantalla */
-    float: left;
-    height: 100%; /* Toma la altura completa del contenedor */
-}
-
-.div-space .right {
-    width: 50%; /* La otra mitad del ancho de la pantalla */
-    float: left;
-    height: 100%; /* Toma la altura completa del contenedor */
+    width: 50%; /* Ocupa la mitad horizontal de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #ff0000; /* Fondo oscuro */
+    position: absolute;
 }
