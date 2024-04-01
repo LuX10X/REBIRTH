@@ -1,0 +1,127 @@
+/* ../stylesheet/WriteForm.css */
+
+/* Estilos generales para el formulario */
+.write-form-container {
+    width: 100%; /* Resta el doble del padding a la anchura */
+    height: 55%; /* Resta el doble del padding a la altura */
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Letras blancas */
+    border-radius: 10px; /* Bordes redondeados */
+    position: absolute;
+    padding: 15px; /* Padding para los elementos internos */
+    box-sizing: border-box; /* Incluir padding en el ancho y alto */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    width: 100%;
+}
+
+/* Estilos para el botón */
+.write-form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; /* Añadido espacio arriba del botón */
+    border: none;
+    border-radius: 50px;
+    background-color: #f11e22;
+    color: #fff;
+    font-size: 20px; /* Tamaño de fuente aumentado */
+    font-family: Arial, sans-serif; /* Cambio de estilo de fuente */
+    text-align: center; /* Centrar el texto */
+    cursor: pointer;
+}
+
+/* Estilos para los labels */
+.name label,
+.number label,
+.title label,
+.score label,
+.id label,
+.label label,
+.order label {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    flex: 0 0 auto;
+    width: 75px;
+}
+
+/* Estilos para los contenedores de los campos */
+.name,
+.title,
+.score,
+.id,
+.label {
+    flex: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.number,
+.order {
+    margin: 5px;
+    box-sizing: border-box;
+    display: flex; /* Para que el label y el input estén en la misma línea */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para los inputs de texto */
+.name input[type="text"],
+.title input[type="text"],
+.id input[type="text"],
+.label input[type="text"],
+.number input[type="number"],
+.order input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Estilos para los inputs de número */
+.number input[type="number"],
+.order input[type="number"] {
+    width: 100px;
+}
+
+/* Estilos para los inputs de número y sus flechas */
+.number input[type="number"]::-webkit-inner-spin-button,
+.number input[type="number"]::-webkit-outer-spin-button,
+.order input[type="number"]::-webkit-inner-spin-button,
+.order input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Oculta las flechas por defecto */
+    appearance: none;
+    margin: 0; /* Ajusta el margen */
+}
+
+/* Estilos para las estrellas */
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-icon {
+    font-size: 24px; /* Tamaño de fuente más grande para las estrellas */
+    color: #f11e22; /* Color principal */
+}
+
+.star-rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.star-rating button:focus {
+    outline: none;
+}
