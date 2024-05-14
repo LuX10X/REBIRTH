@@ -1,29 +1,16 @@
 [
   {
-    "id": "8c60eb16-1c30-4ac4-b7b5-f197d51d14ea",
-    "Title": "Fantastic Day",
-    "ID": "P002-0001",
-    "Score": "☆☆☆☆",
-    "Number": 1,
-    "Order": null,
-    "Name": "Fantastic Four"
-  },
-  {
     "id": "48a1e9ff-a5f2-43f3-9eae-5583f81c9336",
     "Title": "New Day",
     "ID": "P001-0001",
     "Score": "☆☆☆☆☆",
+    "Label": [
+      "rojo",
+      "Spiderman",
+      "Avengers"
+    ],
     "Number": 1,
-    "Order": null,
+    "Order": 2,
     "Name": "Spiderman"
-  },
-  {
-    "id": "727aac43-648e-4da3-bfda-2a896d5a525d",
-    "Title": "New Genesis",
-    "ID": "P003-0001",
-    "Score": "☆☆☆",
-    "Number": 1,
-    "Order": null,
-    "Name": "X-Men"
   }
 ]

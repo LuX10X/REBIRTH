@@ -54,7 +54,7 @@ async function main() {
         order: 19
     };
 
-    //await addData(wikiData.databaseId, wikiData);
+    await addData(wikiData.databaseId, wikiData);
     await addData(localData.databaseId, localData);
 }
 

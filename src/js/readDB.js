@@ -12,7 +12,7 @@ async function readData(databaseId, outputFile) {
             database_id: databaseId,
         });
         
-        fs.writeFileSync(path.join(__dirname, '..', 'json', 'data' + outputFile + '.json'), JSON.stringify(readPage, null, 2));
+        fs.writeFileSync(path.join(__dirname, '..', 'json', 'dataDB' + outputFile + '.json'), JSON.stringify(readPage, null, 2));
 
         console.log(`Datos de la base de datos:`, readPage);
 
@@ -39,7 +39,7 @@ async function readData(databaseId, outputFile) {
                         objectData[propertyKey] = property.select.name;
                         break;
                     case 'multi_select':
-                        objectData[propertyKey] = property.multi_select.name;
+                        objectData[propertyKey] = property.multi_select.map(item => item.name);
                         break;
                     default:
                         break;
@@ -51,7 +51,7 @@ async function readData(databaseId, outputFile) {
 
         console.log("Datos leídos del archivo:", objectsList);
 
-        fs.writeFileSync(path.join(__dirname, '..', 'json', 'items' + outputFile + '.json'), JSON.stringify(objectsList, null, 2));
+        fs.writeFileSync(path.join(__dirname, '..', 'json', 'itemsDB' + outputFile + '.json'), JSON.stringify(objectsList, null, 2));
 
         return objectsList;
     } catch (error) {
@@ -60,30 +60,19 @@ async function readData(databaseId, outputFile) {
     }
 }
 
-async function main(databaseType) {
-    try {
-        let databaseId, outputFile;
+async function main() {
+    const wikiData = {
+        databaseId: "994834b0b3f54c7790f50d544c95e9e2",
+        outputFile: 'Wiki'
+    };
 
-        if (databaseType === 'wiki') {
-            databaseId = "994834b0b3f54c7790f50d544c95e9e2";
-            outputFile = 'DBWiki';
-        } else if (databaseType === 'local') {
-            databaseId = "ccf12b1f5b8443939d2c85ae058ea164";
-            outputFile = 'DBLocal';
-        } else {
-            console.error("Tipo de base de datos no válido.");
-            return;
-        }
+    const localData = {
+        databaseId: "ccf12b1f5b8443939d2c85ae058ea164",
+        outputFile: 'Local'
+    };
 
-        await readData(databaseId, outputFile);
-    } catch (error) {
-        console.error("Error en la ejecución principal:", error);
-    }
+    await readData(wikiData.databaseId, wikiData.outputFile);
+    await readData(localData.databaseId, localData.outputFile);
 }
 
-const databaseType = process.argv[2];
-if (databaseType !== 'wiki' && databaseType !== 'local') {
-    console.error("Por favor, especifique 'wiki' o 'local' como argumento.");
-} else {
-    main(databaseType);
-}
+main();

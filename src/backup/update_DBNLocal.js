@@ -7,7 +7,7 @@ const notion = new Client({
 
 async function getDataById(id) {
     try {
-        const data = await fs.readFile("itemsDBWiki.json", "utf-8");
+        const data = await fs.readFile("itemsDBLocal.json", "utf-8");
         const items = JSON.parse(data);
         const item = items.find(item => item.ID === id);
         if (item) {
@@ -22,14 +22,18 @@ async function getDataById(id) {
     }
 }
 
-async function updateDataToDBWiki() {
-    const idToFind = "P003-0002";//DATO DE ENTRADA
+async function updateDataToDBLocal() {
+    const idToFind = "AMS01-00001";//dato de entrada
 
-    const name = "X-Men2";
+    const name = "AMS";
+    const vol = "VOL 1";
     const number = 1;
     const title = "Part 2";
-    const score = "☆☆";
-    //const id = "P003-0002";
+    const date = "1999-01-01";
+    const writer = "A";
+    const penciler = "B";
+    const order = 2;
+    //const id = "AMS01-00001";
     
     try {
         const item = await getDataById(idToFind);
@@ -43,21 +47,25 @@ async function updateDataToDBWiki() {
             page_id: pageId,
             properties: {
                 "Name": { title: [{ text: { content: name } }] },
+                "Vol": { select: { name: vol } },
                 "Number": { number: number },
                 "Title": { rich_text: [{ text: { content: title } }] },
-                "Score": { select: { name: score,}},
+                "Date": { date: { start: date } },
+                "Writer": { rich_text: [{ text: { content: writer } }] },
+                "Penciler": { rich_text: [{ text: { content: penciler } }] },
+                "Order": { number: order }
                 //"ID": { rich_text: [{ text: { content: id } }] }
             },
         });
 
-        console.log("Datos actulizados en la base de datos wiki:",newData);
+        console.log("Datos actulizados en la base de datos local:",newData);
     } catch (error) {
         console.error("Error al actualizar datos en la base de datos.", error);
     }
 }
 
 async function main() {
-    await updateDataToDBWiki();
+    await updateDataToDBLocal();
 }
 
 main();

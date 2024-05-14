@@ -3,127 +3,9 @@
   "results": [
     {
       "object": "page",
-      "id": "8c60eb16-1c30-4ac4-b7b5-f197d51d14ea",
-      "created_time": "2024-02-10T23:29:00.000Z",
-      "last_edited_time": "2024-02-28T12:57:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
-      },
-      "cover": null,
-      "icon": null,
-      "parent": {
-        "type": "database_id",
-        "database_id": "994834b0-b3f5-4c77-90f5-0d544c95e9e2"
-      },
-      "archived": false,
-      "properties": {
-        "Title": {
-          "id": "%3E%7C%7BJ",
-          "type": "rich_text",
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Fantastic Day",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Fantastic Day",
-              "href": null
-            }
-          ]
-        },
-        "ID": {
-          "id": "LEvc",
-          "type": "rich_text",
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "P002-0001",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "P002-0001",
-              "href": null
-            }
-          ]
-        },
-        "Score": {
-          "id": "ROvP",
-          "type": "select",
-          "select": {
-            "id": "@sk?",
-            "name": "☆☆☆☆",
-            "color": "red"
-          }
-        },
-        "Label": {
-          "id": "ZK%5CM",
-          "type": "multi_select",
-          "multi_select": []
-        },
-        "Number": {
-          "id": "%5B%40HJ",
-          "type": "number",
-          "number": 1
-        },
-        "Order": {
-          "id": "zyil",
-          "type": "number",
-          "number": null
-        },
-        "Name": {
-          "id": "title",
-          "type": "title",
-          "title": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Fantastic Four",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Fantastic Four",
-              "href": null
-            }
-          ]
-        }
-      },
-      "url": "https://www.notion.so/Fantastic-Four-8c60eb161c304ac4b7b5f197d51d14ea",
-      "public_url": null
-    },
-    {
-      "object": "page",
       "id": "48a1e9ff-a5f2-43f3-9eae-5583f81c9336",
       "created_time": "2024-02-10T23:29:00.000Z",
-      "last_edited_time": "2024-03-30T22:50:00.000Z",
+      "last_edited_time": "2024-04-08T16:42:00.000Z",
       "created_by": {
         "object": "user",
         "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
@@ -139,6 +21,7 @@
         "database_id": "994834b0-b3f5-4c77-90f5-0d544c95e9e2"
       },
       "archived": false,
+      "in_trash": false,
       "properties": {
         "Title": {
           "id": "%3E%7C%7BJ",
@@ -203,6 +86,16 @@
               "id": "74af0f6b-ca13-4861-a5c5-a2d29c29837b",
               "name": "rojo",
               "color": "orange"
+            },
+            {
+              "id": "876f48ce-21ff-470d-9062-ca2e962f4740",
+              "name": "Spiderman",
+              "color": "red"
+            },
+            {
+              "id": "734c6842-eb81-4af1-9f7c-a650c8d32114",
+              "name": "Avengers",
+              "color": "gray"
             }
           ]
         },
@@ -214,7 +107,7 @@
         "Order": {
           "id": "zyil",
           "type": "number",
-          "number": null
+          "number": 2
         },
         "Name": {
           "id": "title",
@@ -242,129 +135,11 @@
       },
       "url": "https://www.notion.so/Spiderman-48a1e9ffa5f243f39eae5583f81c9336",
       "public_url": null
-    },
-    {
-      "object": "page",
-      "id": "727aac43-648e-4da3-bfda-2a896d5a525d",
-      "created_time": "2024-02-10T23:29:00.000Z",
-      "last_edited_time": "2024-02-15T19:25:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "d98aeb3b-3369-4ab2-baac-e047bc99420e"
-      },
-      "cover": null,
-      "icon": null,
-      "parent": {
-        "type": "database_id",
-        "database_id": "994834b0-b3f5-4c77-90f5-0d544c95e9e2"
-      },
-      "archived": false,
-      "properties": {
-        "Title": {
-          "id": "%3E%7C%7BJ",
-          "type": "rich_text",
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "New Genesis",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "New Genesis",
-              "href": null
-            }
-          ]
-        },
-        "ID": {
-          "id": "LEvc",
-          "type": "rich_text",
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "P003-0001",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "P003-0001",
-              "href": null
-            }
-          ]
-        },
-        "Score": {
-          "id": "ROvP",
-          "type": "select",
-          "select": {
-            "id": "jHks",
-            "name": "☆☆☆",
-            "color": "green"
-          }
-        },
-        "Label": {
-          "id": "ZK%5CM",
-          "type": "multi_select",
-          "multi_select": []
-        },
-        "Number": {
-          "id": "%5B%40HJ",
-          "type": "number",
-          "number": 1
-        },
-        "Order": {
-          "id": "zyil",
-          "type": "number",
-          "number": null
-        },
-        "Name": {
-          "id": "title",
-          "type": "title",
-          "title": [
-            {
-              "type": "text",
-              "text": {
-                "content": "X-Men",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "X-Men",
-              "href": null
-            }
-          ]
-        }
-      },
-      "url": "https://www.notion.so/X-Men-727aac43648e4da3bfda2a896d5a525d",
-      "public_url": null
     }
   ],
   "next_cursor": null,
   "has_more": false,
   "type": "page_or_database",
   "page_or_database": {},
-  "request_id": "091854d6-e9c5-4024-881d-a9a9c90cd1dd"
+  "request_id": "67be6c98-a793-487c-8edd-9007fde9e19b"
 }
